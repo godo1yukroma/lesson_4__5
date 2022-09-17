@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- тут -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 4</title>
+</head>
+
+<body>
+	<header class="header">
+		<p class="header-p">
+			На цій сторінці:
+		</p>
+		<ul class="header-menu">
+			<li><a href="#font--family">Cімейства шрифтів</a></li>
+			<li><a href="#fonts--style">Стилі шрифтів</a></li>
+			<li><a href="#text--property">Bластивості тексту</a></li>
+
+		</ul>
+	</header>
+	<main class="main">
+		<div class="font-family">
+			<h2 id="font--family">CІМЕЙСТВА ШРИФТІВ</h2>
+			<p>Після кольору шрифт, можливо, найважливіша властивість сторінки. На цій сторінці я не буду демонструвати
+				ніяких "трюків", але покажу ряд варіацій шрифтів, допустимих в CSS.</p>
+			<p>Оскільки не всі шрифти доступні на всіх комп'ютерах (існують тисячі шрифтів і більшість з них не
+				безкоштовні), CSS передбачає резервну систему. Першим ви вказуєте шрифт, який хотіли б використовувати. За
+				ним йдуть будь-які шрифти, які ви могли б використовувати, якщо перший зазначений шрифт недоступний. А
+				закінчити список ви повинні типовим шрифтом, який має 5 видів: serif, sans-serif, monospace, cursive та
+				fantasy.</p>
+			<h4>Наступна таблиця показує приклади різних шрифтів (ваш браузер може не знати їх всіх) і ви можете побачити,
+				що ваш браузер робить з кожним з п'яти типових шрифтів:</h4>
+			<h3>'sans-serif': звичайні шрифти без засічок</h3>
+			<ul class="sans-serif">
+				<li class="arial">Arial, sans-serif</li>
+				<li class="helvetica">Helvetica, sans-serif</li>
+				<li class="verdana">Verdana, sans-serif</li>
+				<li class="trebuchet">Trebuchet MS, sans-serif</li>
+				<li class="gill">Gill Sans, sans-serif</li>
+				<li class="noto">Noto Sans, sans-serif</li>
+				<li class="avantgarde">Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif</li>
+				<li class="arial-narrow">Arial Narrow, sans-serif</li>
+				<li class="sans">sans-serif</li>
+			</ul>
+
+			<h3>'serif': звичайні шрифти із засічками</h3>
+			<ul class="serif">
+				<li class="times">Times, Times New Roman, serif</li>
+				<li class="georgia">Georgia, serif</li>
+				<li class="palatino">Palatino, URW Palladio L, serif</li>
+				<li class="bookman">Bookman, URW Bookman L, serif</li>
+				<li class="new-century">New Century Schoolbook, TeX Gyre Schola, serif</li>
+				<li class="serif-s">serif</li>
+			</ul>
+
+			<h3>'monospace': шрифти фіксованої ширини</h3>
+			<ul class="monospace">
+				<li class="andale"> Andale Mono, monospace</li>
+				<li class="courier-new">Courier New, monospace</li>
+				<li class="courier">Courier, monospace</li>
+				<li class="freeMono">FreeMono, monospace</li>
+				<li class="dejaVu">DejaVu Sans Mono</li>
+				<li class="monospace-m">monospace</li>
+			</ul>
+
+			<h3>'cursive': шрифти, що імітують почерк</h3>
+			<ul class="cursive">
+				<li class="comic-sans">Comic Sans MS, Comic Sans, cursive</li>
+				<li class="bradley">Bradley Hand, cursiveBradley Hand, cursive</li>
+				<li class="brush">Brush Script MT, Brush Script Std, cursive</li>
+				<li class="snell">Snell Roundhand, cursive</li>
+				<li class="cursive-c">cursive</li>
+			</ul>
+
+			<h3>'fantasy': декоративні шрифти, для назв і т.д. ..</h3>
+			<ul class="fantasy">
+				<li class="impact">Impact, fantasy</li>
+				<li class="luminari">Luminari, fantasy</li>
+				<li class="marker">Marker Felt, fantasy</li>
+				<li class="trattatello">Trattatello, fantasy </li>
+				<li class="fantasy-f">fantasy</li>
+			</ul>
+		</div>
+		<div class="fonts-style">
+			<h2 id="fonts--style">СТИЛІ ШРИФТІВ</h2>
+			<p>Більшість шрифтів мають різноманітні стилі в межах одного і того ж шрифтового сімейства. Зазвичай це жирний
+				стиль (bold) або курсив (italic), часто зустрічається також стиль "жирний курсив" (bold italic), менше —
+				капітель (малі прописні літери — small-caps), а в ряді випадків — екстра-світлі/екстра-жирні або
+				розтягнуті/стислі версії.</p>
+			<h3>Стилі</h3>
+			<ul class="style">
+				<li class="normal">font-style: normal</li>
+				<li class="italic">font-style: italic</li>
+				<li class="oblique">font-style: oblique</li>
+			</ul>
+
+			<h3>Насиченість шрифту</h3>
+
+			<ul class="font-weight">
+				<li class="thin">font-weight: 100 - Thin</li>
+				<li class="extra-light">font-weight: 200 - Extra Light (Ultra Light)</li>
+				<li class="light">font-weight: 300 - Light</li>
+				<li class="normal">font-weight: 400 - normal</li>
+				<li class="medium">font-weight: 500 - Medium</li>
+				<li class="semi-bold">font-weight: 600 - Semi Bold (Demi Bold)</li>
+				<li class="bold">font-weight: 700 - Bold</li>
+				<li class="extra-bold">font-weight: 800 - Extra Bold (Ultra Bold)</li>
+				<li class="black900">font-weight: 900 - Black (Heavy)</li>
+			</ul>
+		</div>
+
+		<div class="text-property">
+			<h2 id="text--property">Bластивості тексту</h2>
+			<div class="text-align">
+				<h3>Text-align</h3>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati culpa vel
+					maxime, nulla quos.</p>
+				<p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat non ipsam
+					delectus omnis adipisci.</p>
+				<p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni cumque iure
+					impedit! Eligendi, iste.</p>
+				<p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum aliquid
+					mollitia placeat ab. Quo.</p>
+			</div>
+			<div class="text_decoration">
+				<h3>Text_decoration</h3>
+				<p class="line-trough">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et dolor culpa, veniam cum
+					aliquam ad.</p>
+				<p class="overline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam doloribus ad
+					autem velit ipsum!</p>
+				<p class="underline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ipsum officia amet,
+					consectetur minima atque.</p>
+			</div>
+			<div class="text-shadow">
+				<h3>Text-shadow</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime eligendi ut, perspiciatis odit ex qui?
+				</p>
+			</div>
+			<div class="text-transform">
+				<h3>Text-transform</h3>
+				<p class="capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur fugiat
+					reprehenderit cumque, facilis praesentium?</p>
+				<p class="lowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, consequuntur quae.
+					Odit eius ipsa quas.</p>
+				<p class="uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime optio cumque
+					consectetur libero repudiandae!</p>
+			</div>
+			<div class="text-indent">
+				<h3>Text-indent</h3>
+				<p class="text--indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae labore
+					quibusdam excepturi ipsum quidem quos?</p>
+			</div>
+			<div class="letter-spacing">
+				<h3>Letter-spacing, White-spacing, Word-spacing</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus molestiae adipisci est
+					dignissimos dolorem.</p>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+
+	</footer>
+</body>
+
+</html>
